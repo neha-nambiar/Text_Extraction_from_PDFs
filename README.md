@@ -24,7 +24,7 @@ The text extraction process included:
 
 ### 4. Data Cleaning and Formatting
 Custom functions were developed to clean and format the raw OCR output:
-- **extract_and_format_name()**: Cleaned and formatted voter names.
+- **`extract_and_format_name()`**: Cleaned and formatted voter names.
 - **extract_name_and_relation()**: Separated relative names and relation types.
 - **extract_house_number()**: Isolated house numbers.
 - **extract_age()** and **extract_gender()**: Identified age and gender.
