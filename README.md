@@ -7,7 +7,7 @@ This project focuses on extracting specific information from a scanned electoral
 
 ### 1. PDF to Image Conversion
 - The initial step involved converting the PDF pages to images using the `pdf2image` library.
-- This was essential for Optical Character Recognition (OCR) using Tesseract, which requires image input.
+- This was essential for Optical Character Recognition (OCR) using `tesseract`, which requires image input.
 - Each page was converted into a high-resolution image to preserve detail.
 
 ### 2. Image Preprocessing
@@ -25,14 +25,14 @@ The text extraction process included:
 ### 4. Data Cleaning and Formatting
 Custom functions were developed to clean and format the raw OCR output:
 - **`extract_and_format_name()`**: Cleaned and formatted voter names.
-- **extract_name_and_relation()**: Separated relative names and relation types.
-- **extract_house_number()**: Isolated house numbers.
-- **extract_age()** and **extract_gender()**: Identified age and gender.
+- **`extract_name_and_relation()`**: Separated relative names and relation types.
+- **`extract_house_number()`**: Isolated house numbers.
+- **`extract_age()`** and **`extract_gender()`**: Identified age and gender.
 
 These functions used regular expressions and string manipulation to refine OCR results.
 
 ### 5. Data Organization and Export
-- Extracted data was organized into a DataFrame using pandas for easy manipulation and analysis.
+- Extracted data was organized into a DataFrame using `pandas` for easy manipulation and analysis.
 - The cleaned dataset was exported to an Excel file for further use.
 
 ## Challenges Faced and Solutions
